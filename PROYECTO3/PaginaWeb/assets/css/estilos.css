@@ -1,0 +1,58 @@
+@import url(login.css);
+@import url(signin.css);
+@import url(perfil.css);
+@import url(buscador.css);
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+body.margin {
+	margin: 0;
+	margin-bottom: 100px;
+	margin-top: 51px;
+}
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	
+	text-align: center;
+
+}
+
+li:hover {
+	color: #fff;
+    background-color: #080808;
+}
+
+
+.jumbotron {
+	padding: 0px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #bfb6ff;
+    
+}
+
+.jumbotron h1 {
+	font-size: 44px;
+}
+
+.center-block {
+	float: none;
+}
+
+/*.marginTopSearch {
+margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.withSearch {
+	width: 90% !important;
+}*/

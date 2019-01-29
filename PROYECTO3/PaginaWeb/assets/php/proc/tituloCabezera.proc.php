@@ -1,0 +1,74 @@
+<?php
+	if (isset($_REQUEST['mostrar'])) {
+		$mostrar=$_REQUEST['mostrar'];
+		switch ($mostrar) {
+			case 'contactos':
+				?>
+				<div class="row">
+					<div class="col-sm-4">
+						<h1 class='cabecera'>Contactos</h1>
+					</div>
+					<div class="col-sm-6">
+						<div class='search-box'>
+							<form class='search-form'>
+								<input class='form-control' placeholder='Buscar contactos...' type='text' list="browsers">
+								
+								<button class='btn btn-link search-btn'>
+									<i class='glyphicon glyphicon-search'></i>
+								</button>
+
+								<datalist id="browsers">
+									<option value="Internet Explorer">
+									<option value="Firefox">
+									<option value="Chrome">
+									<option value="Opera">
+									<option value="Safari">
+								</datalist>
+							</form>
+						</div>
+					</div>
+				</div>
+				<?php
+				break;
+			case 'mapa':
+				echo "<h1 class='cabecera'>Mapa</h1>";
+				break;
+			case 'localizar':
+				echo "<h1 class='cabecera'>Localizar</h1>";
+				break;
+			case 'perfil':
+				echo "<h1 class='cabecera'>Perfil</h1>";
+				break;
+			default:
+				echo "<h1 class='cabecera'>Esta pagina no existe</h1>";
+				break;
+		}
+	} else {
+		?>
+		<div class="row">
+			<div class="col-sm-4">
+				<h1 class='cabecera'>Contactos</h1>
+			</div>
+			<div class="col-sm-6">
+				<div class='search-box'>
+					<form class='search-form'>
+						<input class='form-control' placeholder='Buscar contactos...' type='text' list="browsers">
+						
+						<button class='btn btn-link search-btn'>
+							<i class='glyphicon glyphicon-search'></i>
+						</button>
+
+						<datalist id="browsers">
+							<option value="Internet Explorer">
+							<option value="Firefox">
+							<option value="Chrome">
+							<option value="Opera">
+							<option value="Safari">
+						</datalist>
+					</form>
+				</div>
+			</div>
+		</div>
+		<?php
+	}
+?>
