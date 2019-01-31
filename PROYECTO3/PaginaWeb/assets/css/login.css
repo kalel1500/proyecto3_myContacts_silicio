@@ -1,6 +1,6 @@
 .login-form {
 	width: 340px;
-	margin: 50px auto;
+	margin: 150px auto;
 }
 .login-form form {
 	margin-bottom: 15px;
@@ -9,8 +9,29 @@
 	padding: 30px;
 }
 .login-form h2 {
+	/*margin: 0 0 15px;*/
+	color: #636363;
 	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+
 }
+
+.login-form h2:before, .login-form h2:after{
+		content: "";
+		height: 2px;
+		width: 15%;
+		background: #d4d4d4;
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+	}	
+	.login-form h2:before{
+		left: 0;
+	}
+	.login-form h2:after{
+		right: 0;
+	}
 .form-control, .btn {
 	min-height: 38px;
 	border-radius: 2px;
@@ -21,4 +42,10 @@
 .btn {
 	font-size: 15px;
 	font-weight: bold;
+}
+
+.background {
+	background-image: url(../imagenes/background/degradadolila.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }

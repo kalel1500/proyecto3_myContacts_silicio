@@ -8,7 +8,7 @@
 	</head>
 
 	<?php if (!isset($_SESSION['user_id'])) {
-	?><body><?php
+	?><body class="background"><?php
 	} else {
 	?><body class="margin"><?php
 	}?>
@@ -45,7 +45,7 @@
 					<?php include "assets/php/proc/navegador.proc.php"; ?>
 
 					<section>
-						<div class="container">
+						<div class="container margin-container">
 							<?php
 								if (!isset($_REQUEST['mostrar'])) {
 									include "assets/php/contactos.php";
@@ -77,7 +77,7 @@
 					</section>
 
 					<footer class="container-fluid text-center">
-						<p>Adrian Canals</p>
+						<p>Adrian Canals - Joel Moreno</p>
 					</footer>
 				<?php
 			}
@@ -87,5 +87,6 @@
 		<!-- <script src="assets/js/validarFormularios.js" type="text/javascript"></script> -->
 		<script src="assets/js/inputs_pass.js" type="text/javascript"></script>
 		<script src="assets/js/ajax_datos_perfil.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_mapa.js" type="text/javascript"></script>
 	</body>
 </html>

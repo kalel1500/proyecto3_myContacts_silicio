@@ -2,6 +2,8 @@
 @import url(signin.css);
 @import url(perfil.css);
 @import url(buscador.css);
+@import url(navegador.css);
+@import url(mapa.css);
 
 html {
 	min-height: 100%;
@@ -42,10 +44,15 @@ li:hover {
 
 .jumbotron h1 {
 	font-size: 44px;
+	color: white;
 }
 
 .center-block {
 	float: none;
+}
+
+.margin-container {
+	padding-bottom: 25px;
 }
 
 /*.marginTopSearch {
