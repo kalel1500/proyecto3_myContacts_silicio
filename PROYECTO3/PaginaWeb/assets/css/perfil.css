@@ -2,3 +2,29 @@
 	padding-right: 15px !important;
     padding-left: 15px !important;
 }
+
+.margin-rows-perfil {
+	margin-bottom: 20px;
+	background-color: #d4d5d6;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.fondo-datos-perfil {
+	/*background-color: white;*/
+    border-radius: 2px;
+}
+
+#div-datos-perfil {
+	background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.div-foto-perfil {
+    background-color: inherit;
+}
+
+.width50 {
+    width: 50%;
+}

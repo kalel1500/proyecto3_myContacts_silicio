@@ -3,24 +3,21 @@
 	$message = '';
 	if (isset($_POST['email'])) {
 		$email = $_POST['email'];
-		$usuario = $_POST['usuario'];
 		$password = $_POST['password'];
-		$nombre = $_POST['nombre'];
-		$apellido = $_POST['apellido'];
 		if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			$message = 'El correo ES valido';
 			//SELECT nombre, email FROM tbl_usuarios WHERE nombre=usu2 or email=usu1@mail.com
 			if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
 				if ($_POST['password'] == $_POST['confirm_password']) {
-					$records = $conn->prepare('SELECT usuario_usuario, email_usuario FROM tbl_usuario WHERE usuario_usuario=:nombre or email_usuario=:email');
-					$records->bindParam(':nombre', $_POST['nombre']);
+					$records = $conn->prepare('SELECT usuario_usuario, email_usuario FROM tbl_usuario WHERE usuario_usuario=:usuario OR email_usuario=:email');
+					$records->bindParam(':usuario', $_POST['usuario']);
 					$records->bindParam(':email', $_POST['email']);
 					$records->execute();
 					$results = $records->fetch(PDO::FETCH_ASSOC);
-					if (count($results['nombre']) > 0) {
-						$message = "El usuario o el correo ya exsisten <a href='index.php?insertar=7&login=2' class=login>Regístrate</a>";
+					if (count($results['usuario_usuario']) > 0) {
+						$message = "El usuario o el correo ya exsisten.";
 					} else {
-						$sql = "INSERT INTO tbl_usuario (email_usuario, usuario_usuario, password_usuario, nombre_usuario, apellido_usuario, habilitado_usuario, id_grupoUsuario) VALUES (:email, :usuario, :password, :nombre, :apellido, 'si', 1)";
+						$sql = "INSERT INTO tbl_usuario (email_usuario, usuario_usuario, password_usuario, nombre1_usuario, apellido1_usuario, habilitado_usuario, id_grupoUsuario) VALUES (:email, :usuario, :password, :nombre, :apellido, 'si', 1)";
 						$stmt = $conn->prepare($sql);
 						$stmt->bindParam(':email', $_POST['email']);
 						$stmt->bindParam(':usuario', $_POST['usuario']);
@@ -32,7 +29,7 @@
 							$message = "El usuario se ha creado correctamente";
 							header("Location: index.php");
 						} else {
-							$message = "Lo sentimos, ha debido de haber algun error al crear la cuenta <a href='index.php?insertar=7&login=2' class=login>Regístrate</a>";
+							$message = "Lo sentimos, ha debido de haber algun error al crear la cuenta.";
 						}
 					}
 				} else {

@@ -1,7 +1,12 @@
 <?php
+	session_start();
+
 	include "conexion.proc.php";
 
-	$query = "SELECT * FROM tbl_usuario WHERE id_usuario = 4";
+	$id_contacto = $_REQUEST['id_contacto'];
+
+	$query = "SELECT * FROM `tbl_contacto` WHERE `tbl_contacto`.`id_contacto` = $id_contacto";
+	
 	$sql=mysqli_query($link, $query);
 
 	$array = array();

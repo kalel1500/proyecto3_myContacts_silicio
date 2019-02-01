@@ -7,4 +7,4 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="assets/css/estilos.css" rel="stylesheet" type="text/css" media="screen">
 
-<link rel="icon" type="image/png" href="assets/images/recursos.jpg"/>
+<link rel="icon" type="image/png" href="assets/imagenes/otros/logo3.png"/>

@@ -2,6 +2,7 @@
 @import url(signin.css);
 @import url(perfil.css);
 @import url(buscador.css);
+@import url(contactos.css);
 
 html {
 	min-height: 100%;
@@ -44,9 +45,13 @@ li:hover {
 	font-size: 44px;
 }
 
-.center-block {
+.center-block, .text-center {
 	float: none;
 }
+
+/*.img-thumbnail {
+	width: 50%;
+}*/
 
 /*.marginTopSearch {
 margin-top: 20px;
@@ -56,3 +61,23 @@ margin-top: 20px;
 .withSearch {
 	width: 90% !important;
 }*/
+
+.div-alertas {
+    position: fixed;
+    right: 0;
+    
+    bottom: 0;
+    margin: 58px 111px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid;
+    /*color: wheat;*/
+    display: none;
+    z-index: 10000;
+}
+.rojo {
+	background-color: #ff3434;
+}
+.verde {
+	background-color: #76FF6F;
+}

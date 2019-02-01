@@ -10,19 +10,14 @@
 					</div>
 					<div class="col-sm-6">
 						<div class='search-box'>
-							<form class='search-form'>
-								<input class='form-control' placeholder='Buscar contactos...' type='text' list="browsers">
+							<form class='search-form' id="id-form-buscar">
+								<input class='form-control' id="input-form-buscar" placeholder='Buscar contactos... nick, nombres, apellidos, numero o correo' type='text' list="div-datos-datalist" disabled>
 								
-								<button class='btn btn-link search-btn'>
+								<button class='btn btn-link search-btn' disabled>
 									<i class='glyphicon glyphicon-search'></i>
 								</button>
 
-								<datalist id="browsers">
-									<option value="Internet Explorer">
-									<option value="Firefox">
-									<option value="Chrome">
-									<option value="Opera">
-									<option value="Safari">
+								<datalist id="div-datos-datalist">
 								</datalist>
 							</form>
 						</div>

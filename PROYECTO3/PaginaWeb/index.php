@@ -7,6 +7,9 @@
 		<?php include "assets/php/proc/titleHead.proc.php"; ?>
 	</head>
 
+	<div id="div-alertas-verde" class="div-alertas verde"></div>
+	<div id="div-alertas-rojo" class="div-alertas rojo"></div>
+
 	<?php if (!isset($_SESSION['user_id'])) {
 	?><body><?php
 	} else {
@@ -37,8 +40,8 @@
 					<header>
 						<div class="jumbotron">
 							<div class="container">
-							<?php include "assets/php/proc/tituloCabezera.proc.php"; ?>
-						</div>
+								<?php include "assets/php/proc/tituloCabezera.proc.php"; ?>
+							</div>
 						</div>
 					</header>
 
@@ -48,7 +51,7 @@
 						<div class="container">
 							<?php
 								if (!isset($_REQUEST['mostrar'])) {
-									include "assets/php/contactos.php";
+									echo "Esta pagina no existe";
 								} else {
 									$mostrar = $_REQUEST['mostrar'];
 									switch ($mostrar) {
@@ -85,7 +88,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<!-- <script src="assets/js/validarFormularios.js" type="text/javascript"></script> -->
-		<script src="assets/js/inputs_pass.js" type="text/javascript"></script>
-		<script src="assets/js/ajax_datos_perfil.js" type="text/javascript"></script>
+
+		<!-- // scripts navegador -->
+		<script src="assets/js/ajax_navegador_datos.js" type="text/javascript"></script>
+
+		<!-- // scripts perfil -->
+		<script src="assets/js/perfil_display_inputs.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_perfil_datos.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_perfil_modificar.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_perfil_eliminar.js" type="text/javascript"></script>
+
+		<!-- // scripts contactos -->
+		<script src="assets/js/contactos_display_inputs.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_datos.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_datos_independiente.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_destacar.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_eliminar.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_buscar.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_insertar.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_modificar.js" type="text/javascript"></script>
+		<script src="assets/js/ajax_contactos_llenarModificar.js" type="text/javascript"></script>
 	</body>
 </html>
