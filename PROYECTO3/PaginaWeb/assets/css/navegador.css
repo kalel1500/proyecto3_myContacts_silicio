@@ -1,0 +1,15 @@
+.minav-caja-logo {
+	/*display: inline-block;*/
+	padding-top: 12px;
+	/*width: 50px;*/
+	/*padding: 0;*/
+}
+
+
+
+.minav-logo {
+	width: 50px;
+	display: inline-flex !important;
+	/*padding: 0;*/
+	/*display: inline-block;*/
+}

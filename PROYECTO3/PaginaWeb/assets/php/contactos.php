@@ -145,6 +145,7 @@
 								</div>
 							</div>
 							
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ubicación</button>
 							<br /><br />
 
 							<div class="form-group">
@@ -340,6 +341,28 @@
 
 		</div>
 
+	</div>
+
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Ubicación</h4>
+				</div>
+				<div class="modal-body">
+					<div id="mapid"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 	<div class="container col-sm-12 center-block" id="div-datos-contactos"></div>

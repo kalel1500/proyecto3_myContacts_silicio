@@ -11,7 +11,7 @@
 	<div id="div-alertas-rojo" class="div-alertas rojo"></div>
 
 	<?php if (!isset($_SESSION['user_id'])) {
-	?><body><?php
+	?><body class="background"><?php
 	} else {
 	?><body class="margin"><?php
 	}?>
@@ -48,7 +48,7 @@
 					<?php include "assets/php/proc/navegador.proc.php"; ?>
 
 					<section>
-						<div class="container">
+						<div class="container margin-container">
 							<?php
 								if (!isset($_REQUEST['mostrar'])) {
 									echo "Esta pagina no existe";
@@ -80,7 +80,7 @@
 					</section>
 
 					<footer class="container-fluid text-center">
-						<p>Adrian Canals</p>
+						<p>Adrian Canals - Joel Moreno</p>
 					</footer>
 				<?php
 			}
@@ -108,5 +108,9 @@
 		<script src="assets/js/ajax_contactos_insertar.js" type="text/javascript"></script>
 		<script src="assets/js/ajax_contactos_modificar.js" type="text/javascript"></script>
 		<script src="assets/js/ajax_contactos_llenarModificar.js" type="text/javascript"></script>
+
+		<!-- // scripts mapa -->
+		<script src="assets/js/ajax_mapa.js" type="text/javascript"></script>
+		
 	</body>
 </html>

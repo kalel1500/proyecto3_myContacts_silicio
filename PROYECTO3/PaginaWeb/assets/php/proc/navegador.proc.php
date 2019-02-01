@@ -1,12 +1,14 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container-fluid">
-		<div class="navbar-header">
+		<div class="navbar-header" >
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span> 
 			</button>
-			<a class="navbar-brand" href="index.php?mostrar=contactos">MyContacts</a>
+
+			<a class="navbar-brand  minav-caja-logo" href="index.php?mostrar=contactos"><img class="minav-logo" src="./assets/imagenes/logo/logo.png"/>MyContacts</a>
+			
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">

@@ -3,6 +3,8 @@
 @import url(perfil.css);
 @import url(buscador.css);
 @import url(contactos.css);
+@import url(navegador.css);
+@import url(mapa.css);
 
 html {
 	min-height: 100%;
@@ -43,6 +45,7 @@ li:hover {
 
 .jumbotron h1 {
 	font-size: 44px;
+	color: white;
 }
 
 .center-block, .text-center {
@@ -52,6 +55,9 @@ li:hover {
 /*.img-thumbnail {
 	width: 50%;
 }*/
+.margin-container {
+	padding-bottom: 25px;
+}
 
 /*.marginTopSearch {
 margin-top: 20px;

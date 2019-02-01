@@ -15,7 +15,7 @@
 				echo "<title>Validacion</title>";
 				break;
 			default:
-				echo "<title>Recursos</title>";
+				echo "<title>MyContacts</title>";
 				break;
 		}
 	} else {
